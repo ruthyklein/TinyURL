@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "server",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/ruhtyklein/TinyUrl"
+    "url": "github.com/ruthyklein/TinyUrl"
   },
   "author": "Ruth Klein",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1"
+  },
+  "keywords": []
 }
