@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
+import { Box, Typography } from '@mui/material';
 
 const DaysOfWeekChart = ({ links }) => {
   const chartRef = useRef(null);
@@ -56,7 +57,11 @@ const DaysOfWeekChart = ({ links }) => {
   }, [links]);
 
   return (
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Typography variant="h4" sx={{ mb: 2 }}>Days Of Week Chart</Typography>
+
     <canvas ref={chartRef} id="daysOfWeekChart"></canvas>
+    </Box>
   );
 };
 

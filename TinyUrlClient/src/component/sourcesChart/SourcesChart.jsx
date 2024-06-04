@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
-import { Grid } from '@mui/material';
+import { Grid,Typography } from '@mui/material';
 
 const SourcesChart = ({ links }) => {
   const chartRef = useRef(null);
@@ -48,11 +48,12 @@ const SourcesChart = ({ links }) => {
   }, [links]);
 
   return (
-    <Grid container spacing={3}>
-      <Grid item xs={12}>
-        <canvas ref={chartRef} id="sourcesChart"></canvas>
-      </Grid>
+    <Grid container justifyContent="center" alignItems="center" >
+    <Typography variant="h4" sx={{ mb: 2 }}>Sources Chart</Typography>
+    <Grid item xs={12}>
+    <canvas ref={chartRef} id="sourcesChart"></canvas>
     </Grid>
+</Grid>
   );
 };
 

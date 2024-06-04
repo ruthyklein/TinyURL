@@ -44,7 +44,20 @@ const userController = {
         } catch (error) {
             res.status(500).send({ error: 'An error occurred while deleting the user.' });
         }
+    },
+    // הוסף פונקציה חדשה כדי לקבל קישורים של משתמש
+getUserLinks: async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id).populate('links');
+        if (!user) {
+            return res.status(404).send({ error: 'User not found.' });
+        }
+        res.send(user.links);
+    } catch (error) {
+        res.status(500).send({ error: 'An error occurred while fetching the user links.' });
     }
+},
+
 };
 
 export default userController;
