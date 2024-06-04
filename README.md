@@ -4,7 +4,7 @@
 
 TinyURL Service is a URL shortening service that allows users to create short aliases for long URLs. This service simplifies sharing URLs and can be used in various applications where long URLs are not feasible. This README provides an overview of the service, including its features, usage instructions, and deployment steps.
 
-   ![screenshot1](TinyUrlClient\src\screenShots\s3.jpg)
+   ![screenshot1](\TinyUrlClient\src\screenShots\s3.jpg)
 
 ## Features
 
@@ -53,7 +53,7 @@ Clone the repository using Git:
 
 
 
-   ![screenshot1](TinyUrlClient\src\screenShots\s1.png)
+   ![screenshot1](\TinyUrlClient\src\screenShots\s1.png)
 ## License
 
 © 2024 Ruth Klein. All rights reserved.
